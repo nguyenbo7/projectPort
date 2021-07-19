@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--____________________ UNICONS ____________________-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--____________________ CSS Style ____________________-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    
+    <!--____________________ CSS More ____________________-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <title>Nguyen</title>
+</head>
+<body>
+    <!--____________________ HEADER ____________________-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">NGUYENCHAU</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">HOME</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">ABOUT</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">PORTFOLIO</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#gallery" class="nav__link">GALLERY</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">CONTACT</a>
+                    </li>
+                </ul>
+
+                <div class="nav__dark">
+                    <!-- Theme change button -->
+                    <span class="change-theme-name">DARK SIDE</span>
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+                </div>
+
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="uil uil-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--____________________ MAIN ____________________-->
+    <main>
+        <!--____________________ HOME ____________________-->
+        <!--2 Divs in Home
+            Div 1: Social Bar
+            Div 2: Logo Img and slogan text
+        -->
+        <section class="home section"    id="home">
+            <div class="home__container container grid">
+                <div class="home__content "> <!--grid-->
+                    <!--____________________ Div 1: Social Media Bar ____________________-->
+                    <!-- <div class="home__social">
+                    </div> -->
+    
+                    <!--____________________ Div 2: Logo img & Slogan Text ____________________-->
+                    <div class="home__data">
+                        <img src="Img/Paintssss.png" alt="paint brush" class="home__img">
+                        <p class="home__title">Nguyen's Here</p>
+                        <p class="home__subtitle">Let’s draw our paths, color our futures
+                            Welcome to Nguyen's FullStack Developer
+                        </p>
+                        <a href="#" class="button button--flex">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--____________________ ABOUT ____________________-->
+        <!--2 Divs in About
+            Div 1: Brief Introduction + Img
+            Div 2: Tables of Skills
+        -->
+        <section class="about section"   id="about">
+            <div class="about__container  container grid">
+                <!--____________________ ABOUT BRIEF INTRODUCTION ____________________-->
+                <div class="about__introduction">
+                    <img src="Img/SanProfile.png" alt="profileImg" class="about__img">
+                    <div class="about__data">
+                        <p class="about__subtitle">
+                            Inspiring arts from the early age,
+                            with the curiosity about the beauty of technology.
+                            I found myself in good position in FullStack Developer.
+                        </p>
+                        <a href="#" class="button button--flex">Resume</a>
+                    </div>
+                </div>
+
+                <!--____________________ ABOUT SKILLS ____________________-->
+                <div class="about__skills">
+                    <div class="accordion">
+                        <div class="accordion-item" id="question1">
+                            <a class="accordion-link" href="#question1">
+                                <div class="flex">
+                                    <p>EDUCATION</p>
+                                    <ul>
+                                        <li>#Mechatronic</li>
+                                        <li>#Software Engineering</li>
+                                    </ul>
+                                </div>
+                                <i class="icon ion-md-arrow-forward"></i>
+                                <i class="icon ion-md-arrow-down"></i>
+                            </a>
+                            <div class="answer">
+                                <p> I major in Software Engineering at San Jose State University.
+                                    I am a member of Developer and Robotics clubs. 
+                                    I enjoy learning and applying knowledge to real world problems.
+                                </p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item" id="question2">
+                            <a class="accordion-link" href="#question2">
+                                <div class="flex">
+                                    <p>UX/UI DESIGN</p>
+                                    <ul>
+                                        <li>#Figma</li>
+                                        <li>#Sketch</li>
+                                        <li>#Wireframe</li>
+                                        <li>#Prototype</li>
+                                    </ul>
+                                </div>
+                                <i class="icon ion-md-arrow-forward"></i>
+                                <i class="icon ion-md-arrow-down"></i>
+                            </a>
+                            <div class="answer">
+                                <p> I got a Google Certificate for UX/UI Design at Coursera,
+                                    I also invole in club designing to enhance my ability.
+                                    I love how the structure of website is unique and well organized.
+                                </p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item" id="question3">
+                            <a class="accordion-link" href="#question3">
+                                <div class="flex">
+                                    <p>FRONTEND</p>
+                                    <ul>
+                                        <li>#HTML/CSS/JS</li>
+                                        <li>#React</li>
+                                        <li>#Django</li>
+                                    </ul>
+                                </div>
+                                <i class="icon ion-md-arrow-forward"></i>
+                                <i class="icon ion-md-arrow-down"></i>
+                            </a>
+                            <div class="answer">
+                                <p> I enjoy developing websites.
+                                    I learn a lot from tutorials and practice my own.
+                                    I love how creative the websites are.
+                                </p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item" id="question4">
+                            <a class="accordion-link" href="#question4">
+                                <div class="flex">
+                                    <p>BACKEND</p>
+                                    <ul>
+                                        <li>#Java</li>
+                                        <li>#Javascript</li>
+                                        <li>#Python</li>
+                                        <li>#Ruby</li>
+                                        <li>#C++</li>
+                                    </ul>
+                                </div>
+                                <i class="icon ion-md-arrow-forward"></i>
+                                <i class="icon ion-md-arrow-down"></i>
+                            </a>
+                            <div class="answer">
+                                <p> Backend helps to shape my logic.
+                                    I love how algorithm improves our work.
+                                    Also the beauty of algorithm makes me enjoy to learn so much.
+                                </p>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!--End of about__container-->
+        </section>
+
+
+        <!--____________________ SERVICES ____________________-->
+        <section class="service section" id="service">
+            <h2 class="section__title">Services</h2>
+            <span class="section__subtitle">Beautiful Work</span>
+
+            <div class=" service__container swiper-container">
+                <div class=" swiper-wrapper">
+                    <div class="service__card swiper-slide gird">
+                        <img src="icon/website.png" />
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Website</h3>
+                            <p class="portfolio__description">Website adaptable to all devices, 
+                                with UI components and animated interactions.
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                View
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service__card swiper-slide gird">
+                        <img src="icon/wireframe.png" />
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Wireframe</h3>
+                            <p class="portfolio__description">Website adaptable to all devices, 
+                                with UI components and animated interactions.
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                View
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service__card swiper-slide gird">
+                        <img src="icon/data.png" />
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Data Analyst</h3>
+                            <p class="portfolio__description">Website adaptable to all devices, 
+                                with UI components and animated interactions.
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                View
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service__card swiper-slide gird">
+                        <img src="icon/cloud.png" />
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Clouding</h3>
+                            <p class="portfolio__description">Website adaptable to all devices, 
+                                with UI components and animated interactions.
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                View
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service__card swiper-slide gird">
+                        <img src="icon/game.png" />
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Game</h3>
+                            <p class="portfolio__description">Website adaptable to all devices, 
+                                with UI components and animated interactions.
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                View
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service__card swiper-slide gird">
+                        <img src="icon/camera.png" />
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Photoshop</h3>
+                            <p class="portfolio__description">Website adaptable to all devices, 
+                                with UI components and animated interactions.
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                View
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+
+
+        <!--____________________ PORTFOLIO ____________________-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Gallery</h2>
+            <span class="section__subtitle">Extrodinary Arts</span>
+
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--==================== PORTFOLIO 1====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="Img/cloud-red.jpg" alt="portfolio img" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Website</h3>
+                            <p class="portfolio__description">Website adaptable to all devices, 
+                                with UI components and animated interactions.
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                View
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 2====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="Img/cloud-brown.jpg" alt="portfolio img" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Wireframe</h3>
+                            <p class="portfolio__description">Website adaptable to all devices, 
+                                with UI components and animated interactions.
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                View
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 3====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="Img/cloud-blue.jpg" alt="portfolio img" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">AWS Cloud</h3>
+                            <p class="portfolio__description">Website adaptable to all devices, 
+                                with UI components and animated interactions.
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                View
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 4====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="Img/cloud-purple.jpg" alt="portfolio img" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Data Analyst</h3>
+                            <p class="portfolio__description">Website adaptable to all devices, 
+                                with UI components and animated interactions.
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                View
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 5====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="Img/cloud-orange.jpg" alt="portfolio img" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Robotics</h3>
+                            <p class="portfolio__description">Website adaptable to all devices, 
+                                with UI components and animated interactions.
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                View
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--____________________ Contact ____________________-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-phone-alt contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Call Me</h3>
+                            <span class="contact__subtitle">408-999-6879</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle">nguyen@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <form action="" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Email</label>
+                            <input type="email" class="contact__input">
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Subject</label>
+                        <input type="text" class="contact__input">
+                    </div>
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Message</label>
+                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                    </div>
+                    <div class="contact__button">
+                        <a href="#" class="button button--flex">
+                            Send
+                            <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <!--____________________ BUILD IN FUNCTION JS ____________________-->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!--____________________ MAIN JS ____________________-->
+    <script src="main.js"></script>
+</body>
+</html>
